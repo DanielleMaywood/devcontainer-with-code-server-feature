@@ -1,0 +1,12 @@
+{
+	"name": "Sample Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+	"appPort": ["8080"],
+	"features": {
+		"ghcr.io/coder/devcontainer-features/code-server:1": {
+			"auth": "none",
+			"host": "0.0.0.0",
+			"workspace": "/workspaces/devcontainer-with-code-server-feature"
+		}
+	}
+}
